@@ -1,0 +1,43 @@
+<mxfile host="Drawpyo" modified="2026-09-29T16:23:31" agent="Python 3.12, Drawpyo 0.23" version="21.6.5" type="device">
+  <diagram name="Page-1" id="125728437501536">
+    <mxGraphModel dx="2037" dy="830" grid="1" gridSize="10" guides="1" toolTips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="125728436290816" value="Teachers and&#xa;students" style="whiteSpace=wrap;rounded=0;fillColor=#232F3E;strokeColor=none;sketch=0;dashed=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;pointerEvents=1;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.client;" vertex="1" parent="1">
+  <mxGeometry x="40" y="220" width="64" height="64" as="geometry" />
+</mxCell>
+        <mxCell id="125728436298016" value="Traffic&#xa;distribution" style="whiteSpace=wrap;rounded=0;fillColor=#8C4FFF;strokeColor=none;sketch=0;dashed=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;pointerEvents=1;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.application_load_balancer;" vertex="1" parent="1">
+  <mxGeometry x="240" y="220" width="64" height="64" as="geometry" />
+</mxCell>
+        <mxCell id="125728439071568" value="Containerized&#xa;application" style="whiteSpace=wrap;rounded=0;fillColor=#ED7100;strokeColor=none;sketch=0;dashed=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;pointerEvents=1;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.ecs;" vertex="1" parent="1">
+  <mxGeometry x="440" y="220" width="64" height="64" as="geometry" />
+</mxCell>
+        <mxCell id="125728436457584" value="Q&amp;A and scores&#xa;tables" style="whiteSpace=wrap;rounded=0;fillColor=#C925D1;strokeColor=none;sketch=0;dashed=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;pointerEvents=1;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.dynamodb;" vertex="1" parent="1">
+  <mxGeometry x="440" y="40" width="64" height="64" as="geometry" />
+</mxCell>
+        <mxCell id="125728436458448" value="Generated&#xa;images" style="whiteSpace=wrap;rounded=0;fillColor=#7AA116;strokeColor=none;sketch=0;dashed=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;pointerEvents=1;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.bucket;" vertex="1" parent="1">
+  <mxGeometry x="660" y="40" width="64" height="64" as="geometry" />
+</mxCell>
+        <mxCell id="125728436459312" value="Create assignments&#xa;and images" style="whiteSpace=wrap;rounded=0;fillColor=#01A88D;strokeColor=none;sketch=0;dashed=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;pointerEvents=1;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.machine_learning;" vertex="1" parent="1">
+  <mxGeometry x="660" y="220" width="64" height="64" as="geometry" />
+</mxCell>
+        <mxCell id="125728436460176" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;jettySize=auto;startArrow=block;endArrow=block;startFill=0;endFill=0;strokeColor=#545B64;" edge="1" parent="1" source="125728436290816" target="125728436298016" value="Subject / Assignment">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+        <mxCell id="125728436460128" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;jettySize=auto;startArrow=block;endArrow=block;startFill=0;endFill=0;strokeColor=#545B64;" edge="1" parent="1" source="125728436298016" target="125728439071568" value="Access application / Score and feedback">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+        <mxCell id="125728436461040" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;jettySize=auto;startArrow=block;endArrow=block;startFill=0;endFill=0;strokeColor=#545B64;" edge="1" parent="1" source="125728439071568" target="125728436457584" value="Save Q&amp;A / Get Q&amp;A">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+        <mxCell id="125728436461184" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;jettySize=auto;startArrow=block;endArrow=block;startFill=0;endFill=0;strokeColor=#545B64;" edge="1" parent="1" source="125728439071568" target="125728436459312" value="Query Q&amp;A, image / Score and feedback">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+        <mxCell id="125728436461328" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;jettySize=auto;startArrow=block;endArrow=block;startFill=0;endFill=0;strokeColor=#545B64;" edge="1" parent="1" source="125728436459312" target="125728436458448" value="Save image / Get image">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
